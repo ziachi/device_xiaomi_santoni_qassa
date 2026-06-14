@@ -90,6 +90,8 @@ See [android-override-a10/docs/bug-analysis/](https://github.com/ziachi/android-
 | Webview LFS pointers not pulled after repo sync | ✅ Fixed | [webview-lfs.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/webview-lfs.md) |
 | dex2oat duplicate compiler filter crash (CRITICAL) | ✅ Fixed | [dex2oat-compiler-filter.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/dex2oat-compiler-filter.md) |
 | Soong bootstrap cache stale after device.mk fix | ✅ Fixed | [soong-cache.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/soong-cache.md) |
+| Graphics allocator@3.0 bootloop (MSM8937) | ✅ Fixed | [allocator-bootloop.md](docs/bug-analysis/allocator-bootloop.md) |
+| Privapp-permissions whitelist bootloop (GCam + OverrideSettings) | ✅ Fixed | [privapp-permissions-bootloop.md](docs/bug-analysis/privapp-permissions-bootloop.md) |
 
 ## Troubleshooting
 
@@ -98,6 +100,8 @@ See [android-override-a10/docs/bug-analysis/](https://github.com/ziachi/android-
 | webview.apk build error (tiny file) | `cd external/chromium-webview && git lfs pull` |
 | dex2oat crash with "duplicate filter" | See [dex2oat-compiler-filter.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/dex2oat-compiler-filter.md) |
 | Soong build error after device.mk change | Clean Soong cache: `rm -rf out/soong/.bootstrap` |
+| Bootloop after first boot (allocator@3.0) | Remove `<version>3.0</version>` from manifest.xml allocator HAL |
+| Bootloop with privapp-permissions crash | Add missing packages to privapp whitelist XML + ensure XML is in `PRODUCT_COPY_FILES` |
 
 ## Documentation
 
