@@ -1,0 +1,35 @@
+# CHANGELOG — device_xiaomi_santoni_qassa
+
+## v15 (2026-06-14)
+
+### #19 — Build deps fix + device info overlay
+- ALLOW_MISSING_DEPENDENCIES in BoardConfig.mk
+- xd_strings.xml overlay for Settings device info
+
+### #18 — Spectrum kernel manager + OverrideSettings SEPolicy
+- init.spectrum.rc with 4 profiles (Balance/Performance/Battery/Gaming)
+- Spectrum init in Android.mk + device.mk + system.prop
+- property_contexts for persist.spectrum.*
+- override.te + override_file_contexts for OverrideSettings
+
+### #17 — Remove Dolby from device tree
+- Remove vendor.dolby.hardware.dms@1.0 from manifest.xml + compatibility_matrix.xml
+- Remove vendor.audio.dolby.ds2 props from vendor.prop
+
+### #16 — SEPolicy cleanup: remove non-existent types
+- Delete adbroot.te (type not defined in qassa)
+- Delete credstore.te (type not defined in qassa)
+- Remove usb_uvc_enabled_prop dontaudit from platform_app.te
+
+## v14 (2026-06-14)
+
+### #10-#15 — Fix 6 bugs from V14 logcat analysis
+- #10 Calendar debloat (FATAL crash)
+- #11 SELinux memtrack dontaudit (priv_app)
+- #12 Haptic overlay disable (vibrator unsupported)
+- #13 GameSpace debloat (FATAL crash)
+- #14 UVC camera prop dontaudit (dropped — type n/a)
+- #15 SELinux libutils.so allow (keystore/gatekeeperd/drmserver)
+
+### #9 — Bug analysis docs + README update
+### #8 — Fix privapp-permissions bootloop

@@ -2,9 +2,9 @@
 
 > ✅ **Build SUCCESS** — keepQASSA Sisu v2.4_0.s for santoni.
 >
-> - **ZIP:** `qassa_Sisu-v2.4_0.s-UNOFFICIAL-santoni-20260614-1254-Vanilla-signed.zip` (753MB)
-> - **MD5:** `372396bc63a7ee186acecf615938303d`
-> - **Build time:** 19 min 36 sec
+> - **ZIP:** `qassa_Sisu-v2.4_0.s-UNOFFICIAL-santoni-20260614-1642-Vanilla-signed.zip` (752MB)
+> - **MD5:** `9306143979d0bea70d8367ceb48904da`
+> - **Build time:** 03:32
 > - **Signed:** releasekey (`vendor/ziachi-keys`)
 
 Unofficial keepQASSA Sisu v2.4_0.s for Xiaomi Redmi 4X (santoni).
