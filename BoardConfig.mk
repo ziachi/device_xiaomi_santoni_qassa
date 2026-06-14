@@ -284,3 +284,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk
+
+# Custom releasetools with credit
+TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/santoni/releasetools
