@@ -12,3 +12,6 @@ ctl.stop                   u:object_r:ctl_stop_prop:s0
 
 # Dolby
 persist.vendor.dolby.loglevel                 u:object_r:vendor_dolby_loglevel_prop:s0
+
+# Spectrum kernel profiles
+persist.spectrum.       u:object_r:system_prop:s0
