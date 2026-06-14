@@ -1,0 +1,2 @@
+# Allow gatekeeperd to read vendor HAL shared libs (libutils.so)
+allow gatekeeperd same_process_hal_file:file read;

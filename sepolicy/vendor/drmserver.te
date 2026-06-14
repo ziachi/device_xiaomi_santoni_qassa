@@ -1,0 +1,2 @@
+# Allow drmserver to read vendor HAL shared libs (libutils.so)
+allow drmserver same_process_hal_file:file read;

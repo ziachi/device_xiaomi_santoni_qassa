@@ -1,2 +1,29 @@
 soong_namespace {
 }
+
+// Debloat: Remove Dolby Audio app
+android_app {
+    name: "MotoDolbyV3_stub",
+    overrides: ["MotoDolbyV3"],
+    certificate: "platform",
+    manifest: "debloat/AndroidManifest.xml",
+    srcs: [],
+}
+
+// Debloat: Calendar crash — startService from background (FATAL)
+android_app {
+    name: "Calendar_stub",
+    overrides: ["Calendar"],
+    certificate: "platform",
+    manifest: "debloat/AndroidManifest.xml",
+    srcs: [],
+}
+
+// Debloat: GameSpace crash — Settings ActivityNotFoundException (FATAL)
+android_app {
+    name: "GameSpace_stub",
+    overrides: ["GameSpace"],
+    certificate: "platform",
+    manifest: "debloat/AndroidManifest.xml",
+    srcs: [],
+}

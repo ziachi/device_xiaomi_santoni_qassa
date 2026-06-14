@@ -10,3 +10,6 @@ get_prop(priv_app, camera_prop)
 get_prop(priv_app, boottime_prop)
 get_prop(priv_app, bg_daemon_prop)
 get_prop(priv_app, bg_boot_complete_prop)
+
+# Suppress memtrack HAL lookup denial (GMS, non-impactful)
+dontaudit priv_app hal_memtrack_hwservice:hwservice_manager find;
