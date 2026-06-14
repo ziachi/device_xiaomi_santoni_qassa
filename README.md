@@ -82,16 +82,16 @@ mka qassa -j10
 
 ## Known Issues & Fixes
 
-See [android-override-a10/docs/bug-analysis/](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis) for detailed root cause analysis:
-
 | Issue | Status | Doc |
 |-------|--------|-----|
-| ActivityThread.java stray character (javac error) | ✅ Fixed | [activitythread-stray-char.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/activitythread-stray-char.md) |
-| Webview LFS pointers not pulled after repo sync | ✅ Fixed | [webview-lfs.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/webview-lfs.md) |
-| dex2oat duplicate compiler filter crash (CRITICAL) | ✅ Fixed | [dex2oat-compiler-filter.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/dex2oat-compiler-filter.md) |
-| Soong bootstrap cache stale after device.mk fix | ✅ Fixed | [soong-cache.md](https://github.com/ziachi/android-override-a10/tree/main/docs/bug-analysis/soong-cache.md) |
 | Graphics allocator@3.0 bootloop (MSM8937) | ✅ Fixed | [allocator-bootloop.md](docs/bug-analysis/allocator-bootloop.md) |
 | Privapp-permissions whitelist bootloop (GCam + OverrideSettings) | ✅ Fixed | [privapp-permissions-bootloop.md](docs/bug-analysis/privapp-permissions-bootloop.md) |
+| Calendar crash — startService from background | ✅ Fixed (v15) | Debloat via Android.bp override |
+| GameSpace crash — Settings ActivityNotFoundException | ✅ Fixed (v15) | Debloat via Android.bp override |
+| SELinux memtrack/libutils denials | ✅ Fixed (v15) | dontaudit + allow rules |
+| Vibrator unsupported haptic effect type 2 | ✅ Fixed (v15) | Overlay config_enableHapticTextHandle=false |
+
+> **Framework-level fixes** (android-override-a10 repo): see [android-override-a10/docs/](https://github.com/ziachi/android-override-a10/tree/main/docs)
 
 ## Troubleshooting
 
