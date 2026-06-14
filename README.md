@@ -112,4 +112,4 @@ See [android-override-a10/docs/bug-analysis/](https://github.com/ziachi/android-
 
 ## Credits
 
-- [omansh-krishn](https://github.com/omansh-krishn) — keepQASSA ROM source
+- [omansh-krishn](https://github.com/omansh-krishn) — keepQASSA device tree
