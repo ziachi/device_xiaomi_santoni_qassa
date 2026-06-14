@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xd_device_name_summary">Xiaomi Redmi 4X</string>
+    <string name="xd_chipset_type_summary">Qualcomm MSM8937 (Snapdragon 435)</string>
+    <string name="xd_gpu_summary">Adreno 505</string>
+    <string name="xd_camera_mp_summary">13MP rear + 5MP front</string>
+    <string name="xd_screen_type_summary">5.0" 720×1280 IPS</string>
+</resources>

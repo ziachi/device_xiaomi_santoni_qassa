@@ -287,3 +287,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Custom releasetools with credit
 TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/santoni/releasetools
+ALLOW_MISSING_DEPENDENCIES := true
