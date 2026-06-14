@@ -39,3 +39,32 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys"
+
+# ========================================
+# Customizations by ziachi (Unofficial)
+# ========================================
+
+# Build type: Unofficial
+QASSA_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qassa.maintainer=ziachi \
+    ro.qassa.maintainer.github=https://github.com/ziachi \
+    ro.qassa.maintainer.telegram=https://t.me/kalomakan
+
+# ADB enabled by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1
+
+# Signing with releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/ziachi-keys/releasekey
+
+# Android Override
+PRODUCT_PACKAGES += OverrideSettings
+
+# Override config
+PRODUCT_COPY_FILES += \
+    vendor/android-override/config/default_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/override/default_config.xml \
+    vendor/android-override/config/props_database.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/override/props_database.xml
