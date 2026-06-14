@@ -41,7 +41,6 @@ Vanilla build, custom signed, with XiaomiAddon & GCam preinstalled.
 
 - **XiaomiAddon** — Device-specific settings app (KCal, USB Fast Charge, QS tiles)
 - **GCam** — Google Camera preinstalled
-- **Custom Releasetools** — Build credit injection into ZIP
 - **ADB enabled by default** — for screenless/automation access
 - **Custom signed** — releasekey from `vendor/ziachi-keys`
 - **Maintainer info** — embedded in `build.prop`
@@ -111,10 +110,6 @@ See [android-override-a10/docs/bug-analysis/](https://github.com/ziachi/android-
 
 **[@kalomakan](https://t.me/kalomakan) / [ziachi](https://github.com/ziachi)**
 
-## License
+## Credits
 
-```
-Copyright 2025 Android Override Project
-
-Licensed under the Apache License, Version 2.0
-```
+- [omansh-krishn](https://github.com/omansh-krishn) — keepQASSA ROM source
