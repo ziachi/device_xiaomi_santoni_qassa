@@ -60,11 +60,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Signing with releasekey
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/ziachi-keys/releasekey
-
-# Android Override
-PRODUCT_PACKAGES += OverrideSettings
-
-# Override config
-PRODUCT_COPY_FILES += \
-    vendor/android-override/config/default_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/override/default_config.xml \
-    vendor/android-override/config/props_database.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/override/props_database.xml
