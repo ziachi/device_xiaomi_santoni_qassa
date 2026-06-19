@@ -33,3 +33,11 @@
 
 ### #9 — Bug analysis docs + README update
 ### #8 — Fix privapp-permissions bootloop
+
+### #24 — Complete Dolby removal from device tree
+- Remove AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP from BoardConfig.mk
+- Remove media_codecs_dolby_audio.xml copy from device.mk
+- Delete configs/media_codecs_dolby_audio.xml
+- Remove dolby include from configs/media_codecs.xml
+- Clean all Dolby SEPolicy (hal_dms, attributes, hwservice, file_contexts, etc)
+- Fix: incomplete Dolby removal caused privapp-permissions bootloop (daxService)

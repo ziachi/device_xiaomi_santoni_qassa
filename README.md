@@ -304,6 +304,7 @@ git config --global commit.gpgsign true
 ---
 
 ## Commit History
+| 24 | 7393dcc | Complete Dolby removal from device tree (fix bootloop) |
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
