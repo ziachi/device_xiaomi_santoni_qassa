@@ -331,5 +331,4 @@ See [CHANGELOG.md](CHANGELOG.md) for full history.
 ## Credits
 
 - [omansh-krishn](https://github.com/omansh-krishn) — original keepQASSA device tree for santoni
-- [nicholaschum](https://github.com/nicholaschum) — keepQASSA ROM
 - [ziachi](https://github.com/ziachi) — santoni port, customizations, bug fixes
