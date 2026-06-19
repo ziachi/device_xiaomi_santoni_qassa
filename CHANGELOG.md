@@ -27,6 +27,8 @@
 | 21 | v18 | c687798 | Fix PinnerService APEX path for Android 10 (#21) |
 | 22 | v19 | 727c886 | Fix PinnerService path for flattened APEX (#22) |
 | 23 | v20 | 2e0ceda | Add Spectrum kernel profile to XiaomiAddon (#23) |
+| 24 | v20 | d14747c | Update README + CHANGELOG for release (#24) |
+| 25 | v20 | 28593f0 | Remove incorrect credit from README (#25) |
 
 ## Releases
 
@@ -39,11 +41,12 @@
 ### v20 (Latest)
 - **Spectrum kernel profiles** added to XiaomiAddon (QS tile + Settings dropdown)
 - Profiles: Balance, Performance, Battery, Gaming
+- README cleanup
 
 ### v19
 - **PinnerService fix** for flattened APEX — correct path `/system/apex/com.android.runtime.release/javalib/`
 
-### v17-v18
+### v17–v18
 - **Complete Dolby removal** — all references purged from device tree + vendor
 - **PinnerService** initial APEX path fix
 
