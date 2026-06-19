@@ -104,4 +104,22 @@
     <!-- Label for feature switch -->
     <string name="switch_bar_off">Off</string>
 
+
+    <!-- Spectrum -->
+    <string name="spectrum_title">Kernel Profiles</string>
+    <string name="spectrum_profile_title">Spectrum Profile</string>
+    <string name="spectrum_qs_label">Spectrum</string>
+
+    <string-array name="spectrum_profile_entries">
+        <item>Balance</item>
+        <item>Performance</item>
+        <item>Battery Saver</item>
+        <item>Gaming</item>
+    </string-array>
+    <string-array name="spectrum_profile_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>

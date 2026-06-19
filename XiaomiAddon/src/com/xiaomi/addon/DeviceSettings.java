@@ -21,6 +21,8 @@ import android.content.pm.PackageManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.SystemProperties;
+import androidx.preference.ListPreference;
 import android.os.Handler;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
@@ -45,6 +47,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
 
+    public static final String CATEGORY_SPECTRUM = "spectrum";
+    public static final String PREF_SPECTRUM_PROFILE = "spectrum_profile";
+    private static final String SPECTRUM_PROP = "persist.spectrum.profile";
+
     public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
@@ -54,6 +60,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private VibratorNotifStrengthPreference mVibratorNotifStrength;
     private Preference mKcal;
     private SecureSettingSwitchPreference mFastcharge;
+    private ListPreference mSpectrumProfile;
     private static Context mContext;
 
     @Override
@@ -81,6 +88,17 @@ public class DeviceSettings extends PreferenceFragment implements
         mVibratorNotifStrength = (VibratorNotifStrengthPreference) findPreference(KEY_NOTIF_VIBSTRENGTH);
         if (mVibratorNotifStrength != null)
             mVibratorNotifStrength.setEnabled(VibratorNotifStrengthPreference.isSupported());
+
+        // Spectrum profile
+        mSpectrumProfile = (ListPreference) findPreference(PREF_SPECTRUM_PROFILE);
+        if (mSpectrumProfile != null) {
+            String currentProfile = SystemProperties.get(SPECTRUM_PROP, "0");
+            mSpectrumProfile.setValue(currentProfile);
+            mSpectrumProfile.setOnPreferenceChangeListener((preference, newValue) -> {
+                SystemProperties.set(SPECTRUM_PROP, (String) newValue);
+                return true;
+            });
+        }
 
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);

@@ -69,4 +69,20 @@
             android:summary="@string/fastcharge_summary" />
     </PreferenceCategory>
 
+
+    <PreferenceCategory
+        android:key="spectrum"
+        android:title="@string/spectrum_title">
+
+        <ListPreference
+            android:key="spectrum_profile"
+            android:icon="@drawable/ic_spectrum_balance"
+            android:title="@string/spectrum_profile_title"
+            android:summary="%s"
+            android:entries="@array/spectrum_profile_entries"
+            android:entryValues="@array/spectrum_profile_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
