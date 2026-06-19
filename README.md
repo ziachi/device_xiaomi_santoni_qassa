@@ -2,6 +2,7 @@
 
 > **keepQASSA Sisu v2.4_0.s** (Android 10) — Unofficial build for santoni.
 > Vanilla, custom signed, with XiaomiAddon & GCam preinstalled.
+> im just rebuild the rom the source it self already clean. 
 
 ---
 
