@@ -304,23 +304,27 @@ git config --global commit.gpgsign true
 ---
 
 ## Commit History
-| 24 | 7393dcc | Complete Dolby removal from device tree (fix bootloop) |
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
-| # | Hash | Change |
-|---|------|--------|
-| 22 | 32160a3 | Remove Android Override integration from device tree |
-| 21 | df886c1 | Fix README — separate device tree vs override bugs |
-| 20 | fc1ceaa | Update README + CHANGELOG |
-| 19 | ae7f47a | Build deps fix + device info overlay |
-| 18 | ac19f79 | Add Spectrum kernel manager + OverrideSettings SEPolicy |
-| 17 | aa0fc5d | Remove Dolby from device tree |
-| 16 | 60526f3 | SEPolicy cleanup — remove non-existent types |
-| 10-15 | 0a1ca39 | Fix 6 bugs from V14 logcat analysis |
-| 9 | d3098f2 | Add bug analysis docs + update README |
-| 8 | 4032e6f | Fix privapp-permissions bootloop |
-| 6 | 03332ae | Fix allocator@3.0 bootloop + update docs |
+| # | Version | Hash | Change |
+|---|---------|------|--------|
+| 23 | v20 | 2e0ceda | Add Spectrum kernel profile to XiaomiAddon |
+| 22 | v19 | 727c886 | Fix PinnerService path for flattened APEX |
+| 21 | v18 | c687798 | Fix PinnerService APEX path for Android 10 |
+| 20 | v17 | cfbf6ba | Complete Dolby removal from device tree |
+| 19 | v16 | 3f69e6d | Update README — comprehensive setup guide |
+| 18 | v16 | 32160a3 | Remove Android Override integration |
+| 17 | v15 | df886c1 | Fix README — separate device tree vs override bugs |
+| 16 | v15 | fc1ceaa | Update README + CHANGELOG |
+| 15 | v15 | ae7f47a | Build deps fix + device info overlay |
+| 14 | v15 | ac19f79 | Add Spectrum kernel manager + OverrideSettings SEPolicy |
+| 13 | v15 | aa0fc5d | Remove Dolby from device tree |
+| 12 | v15 | 60526f3 | SEPolicy cleanup — remove non-existent types |
+| 11 | - | 0a1ca39 | Fix 6 bugs from V14 logcat analysis |
+| 9 | - | d3098f2 | Add bug analysis docs + update README |
+| 8 | - | 4032e6f | Fix privapp-permissions bootloop |
+| 6 | - | 03332ae | Fix allocator@3.0 bootloop + update docs |
 
 ---
 
